@@ -3,46 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="src/style.css" />
+
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city.." />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>Paris</h1>
-        <p>
-          Thursday 15:04, overcast clouds
-          <br />
+    <div class="container">
+      <header>
+        <form>
+          <input type="search" id="city-input" placeholder="Enter a city.." />
+          <input type="submit" id="search-button" value="Search" />
+        </form>
+      </header>
+      <main>
+        <div>
+          <h1>Paris</h1>
+          <p>
+            Thursday 15:04, overcast clouds
+            <br />
 
-          Humidity: 81%, Wind: 4.63km/h
-        </p>
-      </div>
-      <p>☁️ 4°C</p>
-    </main>
+            Humidity: 81%, Wind: 4.63km/h
+          </p>
+        </div>
+        <p>☁️ 4°C</p>
+      </main>
 
-    <footer>
-      Coded by
-      <a href="https://github.com/tee468569" target="_blank"> Tenzin,</a>
-      <a href="https://github.com/tee468569/HTML" target="_blank">
-        open sourced on GitHub</a
-      >
-      and hosted on
-      <a href="https://weather-condtion.netlify.app/" target="_blank">
-        Netlify</a
-      >
-    </footer>
+      <footer>
+        Coded by
+        <a href="https://github.com/tee468569" target="_blank"> Tenzin,</a>
+        <a href="https://github.com/tee468569/HTML" target="_blank">
+          open sourced on GitHub</a
+        >
+        and hosted on
+        <a href="https://weather-condtion.netlify.app/" target="_blank">
+          Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
