@@ -8,11 +8,11 @@ body {
 }
 .container {
   max-width: 600px;
-  margin: 0 auto;
-  padding: 40px 20px;
+  margin: 60px auto;
+  padding: 30px;
   background: white;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
-  border-radius: 6px;
+  border-radius: 8px;
 }
 #city-input {
   background: #f9f7fe;
@@ -30,14 +30,48 @@ body {
   border-radius: 6px;
   color: white;
 }
+
 h1 {
   font-size: 38px;
-  margin-top: 20px;
+  margin-top: 30px;
+  border-top: 1px solid #f9f7fe;
   line-height: 48px;
+  padding-top: 30px;
 }
 .weather-details {
   font-size: 16px;
-  color: rgba(39, 33, 66, 0.4);
+  color: grey;
   line-height: 24px;
   font-weight: 500;
+  margin-bottom: -100px;
+}
+.weather-details strong {
+  color: #f65282;
+}
+.temperature {
+  display: flex;
+  justify-content: right;
+}
+
+.weather-icon {
+  display: flex;
+
+  font-size: 50px;
+  margin: 0 10px 0 0;
+}
+.weather-temperature {
+  font-size: 100px;
+  font-weight: bolder;
+}
+
+.temperature-unit {
+  font-size: 28px;
+  margin-top: -20px;
+}
+footer {
+  color: grey;
+  font-size: 14px;
+  margin-top: 100px;
+  border-top: solid 1px #f9f7fe;
+  padding-top: 30px;
 }
