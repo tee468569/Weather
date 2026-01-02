@@ -61,8 +61,8 @@ h1 {
   margin: 0 10px 0 0;
 }
 .weather-temperature {
-  font-size: 100px;
-  font-weight: 800px;
+  font-size: 90px;
+  font-weight: bold;
 }
 
 .temperature-unit {
