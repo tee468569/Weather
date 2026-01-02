@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,19 +11,18 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-
-    <title>Document</title>
+    <title>Weather</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <form>
-          <input type="search" id="city-input" placeholder="Enter a city.." />
-          <input type="submit" id="search-button" value="Search" />
+        <form id="search-form">
+          <input type="search" placeholder="Enter a city.." id="city-input" />
+          <input type="submit" value="Search" id="search-button" />
         </form>
       </header>
       <main>
-        <h1>Paris</h1>
+        <h1 id="city-name">Paris</h1>
         <p class="weather-details">
           Thursday 15:04, overcast clouds
           <br />
@@ -49,5 +49,6 @@
         >
       </footer>
     </div>
+    <script src="src/script.js"></script>
   </body>
 </html>
