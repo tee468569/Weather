@@ -6,6 +6,8 @@ function displayTemperature(response) {
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind-speed");
   let iconElement = document.querySelector("#icon");
+  let dateTimeElement = document.querySelector("#dateTime");
+  let date = new Date(response.data.time * 1000);
 
   temperatureElement.innerHTML = Math.round(temperature);
   city.innerHTML = response.data.city;
@@ -13,6 +15,26 @@ function displayTemperature(response) {
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windElement.innerHTML = `${response.data.wind.speed}km/h`;
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-icon" />`;
+  dateTimeElement.innerHTML = formatDate(date);
+}
+function formatDate(date) {
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0 ${minutes}`;
+  }
+
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[date.getDay()];
+  return `${day} ${hours}:${minutes}`;
 }
 function citySearch(city) {
   let apiKey = "3fb4403a03669541456bf8otac408501";
